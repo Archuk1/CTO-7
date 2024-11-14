@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTO</title>
+    <style> 
+        body { 
+            background-color: #8a8786;  
+            font-family: Arial, sans-serif; 
+            color: #fbfbf8;  
+            margin: 20px; 
+            transition: background-color 0.3s ease;  
+        } 
+ 
+        header { 
+            background-color: #fbfbf8; 
+            padding: 10px 0; 
+            margin-bottom: 20px; 
+            text-align: center; 
+        } 
+         
+        nav ul { 
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            display: flex;  
+            justify-content: center;  
+        } 
+ 
+        nav ul li { 
+            margin: 0 15px; 
+        } 
+ 
+        nav ul li a { 
+            color: #865f4b;  
+            text-decoration: none;  
+            font-size: 18px;  
+            padding: 10px 15px;  
+            transition: background-color 0.3s ease;  
+        } 
+ 
+        nav ul li a:hover { 
+            background-color: #fbfbf8;  
+            color: #865f4b;  
+        } 
+ 
+        h1, h2, h3 { 
+            text-align: center;  
+            color: #fbfbf8; 
+        } 
+ 
+        table { 
+            width: 100%; 
+            margin-bottom: 20px; 
+            border-collapse: collapse;  
+        } 
+ 
+        th, td { 
+            border: 2px solid #fbfbf8; 
+            padding: 10px; 
+            text-align: center;  
+        } 
+ 
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto 20px; 
+            transition: transform 0.3s ease;  
+        } 
+ 
+        iframe { 
+            width: 100%; 
+            height: 315px; 
+            display: block; 
+            margin: 0 auto; 
+        } 
+ 
+        form { 
+            background-color: #fbfbf8; 
+            padding: 20px; 
+            border-radius: 5px; 
+            margin-top: 20px; 
+        } 
+ 
+        input, select, textarea { 
+            width: calc(100% - 22px);  
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #865f4b; 
+            border-radius: 5px; 
+            box-sizing: border-box;  
+        } 
+ 
+        input[type="submit"] { 
+            background-color: #865f4b; 
+            color: #fbfbf8; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        } 
+ 
+        input[type="submit"]:hover { 
+            background-color: #7e7d7c; 
+        } 
+ 
+        label { 
+            color: #865f4b;  
+            font-weight: bold;  
+        } 
+ 
+        @media screen and (max-width: 768px) { 
+            nav ul { 
+                flex-direction: column;  
+            } 
+            iframe { 
+                height: 200px; 
+            } 
+        } 
+    </style> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Графік роботи</a></li>
+                <li><a href="#">Відгуки</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <h1>CTO</h1>
+    <h3>Ласкаво просимо до СТО у Вадіка!</h3>
+
+    <h2>Послуги які ми надаємо</h2>
+    <ul>
+        <li>Мийка</li>
+        <li>Запчастини</li>
+        <li>Сервісне обслуговування</li>
+    </ul>
+
+    <h2>Категорії</h2>
+    <table>
+        <tr>
+            <th>Мотоцикли</th>
+            <th>Машини</th>
+            <th>Бензокоси</th>
+        </tr>
+        <tr>
+            <td>Запчастини</td>
+            <td>Запчастини</td>
+            <td>Запчастини</td>
+        </tr>
+        <tr>
+            <td>Мийка</td>
+            <td>Мийка</td>
+            <td>Чистка</td>
+        </tr>
+        <tr>
+            <td>Сервісне обслуговування</td>
+            <td>Сервісне обслуговування</td>
+            <td>Сервісне обслуговування</td>
+        </tr>
+    </table>
+
+    <h2>Фото наших товарів</h2>
+        <img src="https://agrotech-trading.com.ua/media/news-stati/original/diski-shini1.jpg" alt="CTO">
+    
+       <h2>Корисне відео</h2>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/TlMtu87GILk" title="Як почистити і  настроїти   карбіратор хонда діо." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
+<h2>Опитування</h2> 
+<form action="submit.php" method="POST"> 
+    <label>Ім'я:</label> 
+    <input type="text" name="name" required> 
+
+    <label>Email:</label> 
+    <input type="email" name="email" required> 
+
+    <label>Виберіть запит який вас цікавить</label> 
+    <select name="style" required> 
+        <option value="Casual">Ремонт</option> 
+        <option value="Denim">Зв'язок з підтримкою</option> 
+        <option value="Streetstyle">Питання</option> 
+    </select> 
+
+    <label>Скільки років ви є нашим клієнтом?</label> 
+    <input type="number" name="years" min="0"> 
+
+    <label>Опишіть ваш досвід:</label> 
+    <textarea name="experience"></textarea> 
+
+    <input type="submit" value="Надіслати"> 
+</form> 
+
+    <p id="responseMessage" style="text-align: center; color: #fbfbf8;"></p>
+
+    <h2>Наші жарти</h2>
+    <p id="joke">Натисніть кнопку нижче, щоб завантажити жарт!</p>
+    <button onclick="loadJoke()">Завантажити жарт</button>
+
+    <script>
+        // Функція для завантаження жартів з текстового файлу
+        async function loadJoke() {
+            try {
+                const response = await fetch('jokes.txt');
+                const text = await response.text();
+                const jokes = text.split('\n').filter(joke => joke.trim() !== ''); // Розділити на рядки та видалити порожні рядки
+                const randomJoke = jokes[Math.floor(Math.random() * jokes.length)]; // Вибрати випадковий жарт
+                document.getElementById('joke').textContent = randomJoke; // Відобразити жарт
+            } catch (error) {
+                console.error('Помилка завантаження жартів:', error);
+            }
+        }
+        
+        
+        $(document).ready(function() {
+            $('#surveyForm').submit(function(event) {
+                event.preventDefault();
+        
+                const formData = $(this).serialize();
+        
+                $.ajax({
+                    type: 'POST',
+                    url: 'submit.php', // PHP файл для обробки анкети
+                    data: formData,
+                    success: function(response) {
+                        // Виводимо підтвердження
+                        $("#message").html("Дякуємо за ваш відгук, " + $('#name').val() + "!<br>Ваші відповіді збережені.");
+                        $("#surveyForm")[0].reset(); // Очищення форми
+                    },
+                    error: function() {
+                        $('#responseMessage').text('Сталася помилка при відправці анкети. Спробуйте ще раз.');
+                    }
+                });
+            });
+        });
+        
+        
+        
+    </script> 
+</body> 
+</html>
